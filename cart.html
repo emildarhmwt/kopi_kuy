@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/logo/logo_florist.png"
+      type="image/x-icon"
+    />
+    <title>Produk</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.css" />
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+      /* tulis kode CSS internal di bawah sini */
+
+      body {
+        background-image: url(../images/background/1.png);
+        background-size: cover;
+      }
+
+      .bg-blue {
+        background-color: #437d8b;
+      }
+
+      .btn-blue {
+        background-color: #437d8b;
+      }
+
+      .text-pink {
+        color: rgb(215, 113, 130);
+      }
+      .text-putih {
+        color: rgb(233, 192, 192);
+      }
+
+      /* Batas Akhir penulisan kode CSS internal */
+    </style>
+  </head>
+
+  <body>
+    <!-- Tulis Kode Bootstrap Di Bawah Sini -->
+
+    <nav
+      class="navbar navbar-dark bg-blue navbar-expand-lg no-gutters bisadicopy"
+    >
+      <div class="container">
+        <div class="col-2 text-start">
+          <a href="#">
+            <img
+              src="images/logo/logo_florist.png"
+              height="auto"
+              width="100"
+              alt="image"
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav12"
+          aria-controls="navbarNav12"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center col-md-8"
+          id="navbarNav12"
+        >
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#our-team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#review">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.tiktok.com"
+              ><i class="bi bi-tiktok"></i
+            ></a>
+          </li>
+        </ul>
+        <a href="produk.html" class="btn btn-outline-light position-relative">
+          <i class="bi bi-flower1"></i>
+          <span
+            id="cart_icon"
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+          >
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="keranjang">
+      <div class="container mt-5 mb-5">
+        <div class="row text-center">
+          <div class="col text-light">
+            <h1>Put Your Shopping Here</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <ul class="list-group mb-4" id="ul_list_produk"></ul>
+          </div>
+        </div>
+
+        <div id="keteranganharga" class="row py-5 align-items-top d-none">
+          <div
+            class="col-12 col-sm-10 col-md-8 m-auto col-lg-7 text-start pt-4 pt-lg-0"
+          >
+            <div class="bg-gray pb-5 pt-5 ps-4 pe-4 rounded shadow">
+              <h2 class="font-weight-light text-putih">
+                <i class="bi bi-journal-text"></i> Information
+              </h2>
+              <hr />
+              <p class="h4 text-putih">
+                Please Read this Before You Checkout
+                <i class="bi bi-emoji-smile"></i>
+              </p>
+              <hr />
+
+              <p class="text-start text-putih"><em> Delivery Time</em></p>
+              <p class="text-start text-putih">
+                <em>We provide 2 delivery time options.</em>
+              </p>
+              <p class="text-start text-putih">
+                <em
+                  >Morning (08.30 – 13.00) available for a minimum of d+1
+                  delivery date</em
+                >
+              </p>
+              <p class="text-start text-putih">
+                <em
+                  >Afternoon (13.01 – 19.00) available for orders on the same
+                  day before 12.00 and the next day</em
+                >
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-10 col-md-8 m-auto col-lg-5 text-start pt-4 pt-lg-0"
+          >
+            <div class="bg-gray pb-5 pt-5 ps-4 pe-4 rounded shadow">
+              <h2 class="font-weight-light text-putih">
+                <i class="bi bi-tag"></i> Price
+              </h2>
+              <hr />
+              <p class="h4 text-putih">
+                Please Click The Button Below
+                <i class="bi bi-arrow-down-circle"></i>
+              </p>
+              <hr />
+              <p class="text-start text-putih"><em>Sub Total</em></p>
+              <p id="subtotal_html"></p>
+              <p class="text-start text-putih"><em>PPN(10%)</em></p>
+              <p id="ppn_html"></p>
+              <p class="text-start text-putih"><em>Total</em></p>
+              <p id="total_html"></p>
+              <p class="text-center pt-4">
+                <a
+                  href="https://wa.me/628123456?text=Saya ingin membeli"
+                  class="btn btn-blue"
+                  >Checkout</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Batas Akhir penulisan kode Bootstrap -->
+    <script>
+      /* Tulis Javascript Di bawah Sini */
+
+      var tmp_list_belanja = [];
+      var hargatotal = 0;
+
+      function updateListCart() {
+        var list_belanja = localStorage.getItem("list_belanja");
+        if (list_belanja != null) {
+          var list_belanja_object = JSON.parse(
+            localStorage.getItem("list_belanja")
+          );
+          list_belanja_object.forEach((item) => {
+            hargatotal += item.hargaint;
+
+            var idx = tmp_list_belanja.findIndex((itemTMP) => {
+              if (itemTMP.nama === item.nama) {
+                return true;
+              }
+              return false;
+            });
+
+            if (idx !== -1) {
+              tmp_list_belanja[idx].qty = tmp_list_belanja[idx].qty + 1;
+            } else {
+              tmp_list_belanja.push(item);
+            }
+          });
+          updateTampilan();
+        }
+      }
+
+      updateListCart();
+
+      function updateTampilan() {
+        if (tmp_list_belanja.length < 1) {
+          ul_list_produk.innerHTML = `<li class="list-group-item d-flex justify-content-center align-items-center"><h3>Keranjang Belanja Anda Kosong</h3></li>`;
+          keteranganharga.classList.add("d-none");
+        } else {
+          keteranganharga.classList.remove("d-none");
+          var template_list = ``;
+          tmp_list_belanja.forEach((item, index) => {
+            template_list += `<li class="list-group-item d-flex justify-content-between align-items-center">
+                            <img src="${item.foto}" height="40" width="40">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">${item.nama}</div>
+                                <span class="harga">${item.harga}</span> x
+                                <span class="jumlah">${item.qty}</span>
+                            </div>
+                            <div class="fw-bold mx-3">${titikPemisahRupiah(
+                              item.hargaint * item.qty
+                            )}</div>
+                            <button onclick="hapusProduk(${index})" class="btn btn-danger btn-sm">Hapus</span>
+                        </li>`;
+          });
+          ul_list_produk.innerHTML = template_list;
+          subtotal_html.innerHTML = titikPemisahRupiah(hargatotal);
+          ppn_html.innerHTML = titikPemisahRupiah((hargatotal * 10) / 100);
+          total_html.innerHTML = titikPemisahRupiah(
+            hargatotal + (hargatotal * 10) / 100
+          );
+        }
+      }
+
+      /* Fungsi Untuk memberi titik ribuan pada rupiah untuk memudahkan pembacaan harga */
+      function titikPemisahRupiah(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      }
+
+      /* Fungsi untuk menghapus quantity dan produk pada cart */
+
+      function hapusProduk(index) {
+        hargatotal = hargatotal - tmp_list_belanja[index].hargaint;
+
+        var list_belanja = localStorage.getItem("list_belanja");
+        var list_belanja_object = JSON.parse(
+          localStorage.getItem("list_belanja")
+        );
+        var nama_produk = tmp_list_belanja[index].nama;
+
+        var idx = list_belanja_object.findIndex((itemTMP) => {
+          if (itemTMP.nama === nama_produk) {
+            return true;
+          }
+          return false;
+        });
+
+        if (idx !== -1) {
+          list_belanja_object.splice(idx, 1);
+          localStorage.setItem(
+            "list_belanja",
+            JSON.stringify(list_belanja_object)
+          );
+        }
+        if (tmp_list_belanja[index].qty > 1) {
+          tmp_list_belanja[index].qty = tmp_list_belanja[index].qty - 1;
+        } else {
+          tmp_list_belanja.splice(index, 1);
+        }
+        updateTampilan();
+      }
+
+      /* Batas Akhir penulisan kode Javascript */
+    </script>
+  </body>
+</html>
